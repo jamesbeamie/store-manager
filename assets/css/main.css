@@ -110,10 +110,59 @@ article {
 	width: 100%;
 }
 
-article.login
+article.add-to-cart,article.login
  {
 	align-items: center;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
+}
+article.add-to-cart form 
+{
+	width: 600px;
+	margin: 200px 0 50px 0;
+}
+
+article.add-to-cart form input
+ {
+	margin-right: 10px;
+}
+
+article.add-to-cart form input, article.add-to-cart form button
+ {
+	height: 50px;
+	border-radius: 3px;
+	border: 2px solid steelblue;
+	font-weight: bold;
+	font-size: 1.6rem;
+	text-align: center
+}
+
+article.add-to-cart form input[type=text] 
+{
+	width: 400px;
+}
+
+article.add-to-cart form input[type=number] 
+{
+	width: 80px;
+}
+
+article.add-to-cart form button
+ {
+	background-color: steelblue;
+	color: #fff;
+	width: 80px;
+}
+
+article.add-to-cart button.go-to-cart 
+{
+	background-color: #00a873;
+	border-radius: 3px;
+	border: 2px solid #00a873;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.6rem;
+	height: 50px;
+	width: 120px;
 }
