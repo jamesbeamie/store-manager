@@ -117,7 +117,6 @@ article.add-to-cart,article.login
 	flex-flow: column;
 	justify-content: flex-start;
 }
-
 article.add-to-cart form 
 {
 	width: 600px;
