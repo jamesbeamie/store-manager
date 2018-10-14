@@ -109,16 +109,15 @@ article {
 	padding: 30px 20px;
 	width: 100%;
 }
-
-article.add-to-cart,article.login
+article.add-to-cart, article.cart, article.login
  {
 	align-items: center;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
 }
-article.add-to-cart form 
-{
+article.add-to-cart form
+ {
 	width: 600px;
 	margin: 200px 0 50px 0;
 }
@@ -137,9 +136,8 @@ article.add-to-cart form input, article.add-to-cart form button
 	font-size: 1.6rem;
 	text-align: center
 }
-
-article.add-to-cart form input[type=text] 
-{
+article.add-to-cart form input[type=text]
+ {
 	width: 400px;
 }
 
@@ -165,4 +163,89 @@ article.add-to-cart button.go-to-cart
 	font-size: 1.6rem;
 	height: 50px;
 	width: 120px;
+}
+article.cart table {
+	font-weight: bold;
+	margin: 40px 0 60px 0;
+	width: 600px;
+	text-align: right;
+}
+
+article.cart table caption {
+	font-size: 2.0rem;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+article.cart table tr th:first-child, article.cart table tr td:first-child {
+	padding-left: 10px;
+	text-align: left;
+}
+
+article.cart table tr th {
+	font-size: 1.6rem;
+	padding-bottom: 10px;
+}
+
+article.cart table tr td {
+	background-color: lightgrey;
+	font-size: 1.5rem;
+	padding: 10px 5px 10px 0;
+}
+
+article.cart table tr:last-child td:first-child {
+	text-align: center;
+}
+
+article.cart div.control-btns button {
+	border-radius: 3px;
+	
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.4rem;
+	height: 40px;
+	margin: 0 10px;
+	width: 100px;
+}
+
+article.cart div.control-btns button.cancel {
+	border: 1px solid firebrick;
+	background-color: firebrick;
+}
+
+article.cart div.control-btns button.cont-shopping {
+	border: 1px solid steelblue;
+	background-color: steelblue;
+}
+
+article.cart div.control-btns button.checkout {
+	border: 1px solid #00a873;
+	background-color: #00a873;
+}
+
+article.login span {
+	font-weight: bold;
+	font-size: 1.9rem;
+	margin: 150px 0 30px 0;
+}
+
+article.login form {
+}
+
+article.login form input {
+	border: 1px solid steelblue;
+	border-radius: 3px;
+	height: 35px;
+	margin: 0 10px 10px 0;
+	padding-left: 10px;
+	width: 200px;
+}
+
+article.login form button {
+	background-color: steelblue;
+	border: 1px solid steelblue;
+	border-radius: 3px;
+	color: #fff;
+	height: 35px;
+	width: 70px;
 }
