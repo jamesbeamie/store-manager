@@ -109,19 +109,16 @@ article {
 	padding: 30px 20px;
 	width: 100%;
 }
-
 article.add-to-cart, article.cart, article.login, article.new-attendant, article.create-product {
 	align-items: center;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
 }
-
 article.add-to-cart form {
 	width: 600px;
 	margin: 200px 0 50px 0;
 }
-
 article.add-to-cart form input {
 	margin-right: 10px;
 }
@@ -134,7 +131,6 @@ article.add-to-cart form input, article.add-to-cart form button {
 	font-size: 1.6rem;
 	text-align: center
 }
-
 article.add-to-cart form input[type=text] {
 	width: 400px;
 }
@@ -148,7 +144,6 @@ article.add-to-cart form button {
 	color: #fff;
 	width: 80px;
 }
-
 article.add-to-cart button.go-to-cart {
 	background-color: #00a873;
 	border-radius: 3px;
@@ -159,7 +154,6 @@ article.add-to-cart button.go-to-cart {
 	height: 50px;
 	width: 120px;
 }
-
 article.cart table {
 	font-weight: bold;
 	margin: 40px 0 60px 0;
@@ -245,7 +239,6 @@ article.login form button {
 	height: 35px;
 	width: 70px;
 }
-
 article.sale-records {
 	justify-content: center;
 	display: flex;
@@ -519,5 +512,4 @@ article.profile div.rights {
 	font-weight: bold;
 	margin-top: 30px;
 	padding: 10px;
-
 }
