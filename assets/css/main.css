@@ -109,7 +109,6 @@ article {
 	padding: 30px 20px;
 	width: 100%;
 }
-
 article.add-to-cart, article.cart, article.login
  {
 	align-items: center;
@@ -117,7 +116,6 @@ article.add-to-cart, article.cart, article.login
 	flex-flow: column;
 	justify-content: flex-start;
 }
-
 article.add-to-cart form
  {
 	width: 600px;
@@ -138,7 +136,6 @@ article.add-to-cart form input, article.add-to-cart form button
 	font-size: 1.6rem;
 	text-align: center
 }
-
 article.add-to-cart form input[type=text]
  {
 	width: 400px;
@@ -167,7 +164,6 @@ article.add-to-cart button.go-to-cart
 	height: 50px;
 	width: 120px;
 }
-
 article.cart table {
 	font-weight: bold;
 	margin: 40px 0 60px 0;
