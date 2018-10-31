@@ -15,14 +15,16 @@
 		<a href="sales.html"><span class="fa fa-clipboard-list"></span> All Sales</a>
 		<a href="attendant.html"><span class="fa fa-user"></span> Create user</a>
 	</aside>
-	<article class="create-product">
+	<article class="create-product login">
 		<h2>Create new product</h2>
-		<form>
-			<input type="text" name="product-name" placeholder="Enter product name">
-			<input type="text" name="product-price" placeholder="Enter product price">
-			<input type="number" name="product-qty" min="1" placeholder="Enter quantity">
+		<span id="msg"></span>
+		<form id="newproduct">
+			<input type="text" id="product" name="product-name" placeholder="Enter product name">
+			<input type="text" id="price" name="product-price" placeholder="Enter product price">
+			<input type="number" id="quantity" name="product-qty" min="1" placeholder="Enter quantity">
 			<button type="submit" class="create">Create</button>
 		</form>
 	</article>
+	<script src="../assets/js/createproduct.js"></script>
 </body>
 </html>
