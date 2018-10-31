@@ -109,28 +109,32 @@ article {
 	padding: 30px 20px;
 	width: 100%;
 }
+
 article.add-to-cart, article.cart, article.login, article.new-attendant, article.create-product {
 	align-items: center;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
 }
+
 article.add-to-cart form {
 	width: 600px;
 	margin: 200px 0 50px 0;
 }
+
 article.add-to-cart form input {
 	margin-right: 10px;
 }
 
 article.add-to-cart form input, article.add-to-cart form button {
-	height: 50px;
+	height: 40px;
 	border-radius: 3px;
 	border: 2px solid steelblue;
 	font-weight: bold;
 	font-size: 1.6rem;
 	text-align: center
 }
+
 article.add-to-cart form input[type=text] {
 	width: 400px;
 }
@@ -144,6 +148,7 @@ article.add-to-cart form button {
 	color: #fff;
 	width: 80px;
 }
+
 article.add-to-cart button.go-to-cart {
 	background-color: #00a873;
 	border-radius: 3px;
@@ -154,6 +159,7 @@ article.add-to-cart button.go-to-cart {
 	height: 50px;
 	width: 120px;
 }
+
 article.cart table {
 	font-weight: bold;
 	margin: 40px 0 60px 0;
@@ -216,7 +222,7 @@ article.cart div.control-btns button.checkout {
 article.login span {
 	font-weight: bold;
 	font-size: 1.9rem;
-	margin: 150px 0 30px 0;
+	margin: 40px 0 30px 0;
 }
 
 article.login form {
@@ -239,6 +245,7 @@ article.login form button {
 	height: 35px;
 	width: 70px;
 }
+
 article.sale-records {
 	justify-content: center;
 	display: flex;
@@ -256,12 +263,17 @@ article.sale-records table {
 article.sale-records table caption {
 	font-size: 1.2rem;
 	font-weight: bold;
+	text-align: center;
 	margin-bottom: 30px;
 }
 
 article.sale-records table tr th:first-child, article.sale-records table tr td:first-child {
 	padding-left: 10px;
-	text-align: left;
+	text-align: center;
+}
+article.sale-records table tr th, article.sale-records table tr td {
+	padding-left: 10px;
+	text-align: center;
 }
 
 article.sale-records table tr th {
@@ -498,7 +510,7 @@ article.profile table tr td {
 	background-color: lightgrey;
 	font-size: 1.4rem;
 	font-weight: bold;
-	padding: 7px 10px;
+	padding: 7px, 10px;
 }
 
 article.profile table tr td:last-child {
@@ -512,4 +524,59 @@ article.profile div.rights {
 	font-weight: bold;
 	margin-top: 30px;
 	padding: 10px;
+
 }
+
+article.orders table {
+	border-spacing: 3px 5px;
+	font-size: 1.5rem;
+	text-align: center;
+	width: 870px;
+}
+
+article.orders table tr th {
+	background-color: #fff;
+	color: black;
+}
+
+article.orders table tr th:first-child {
+	background-color: #fff;
+}
+article.orders table{
+	margin-left:170px;
+}
+article.orders table tr td {
+	background: lightgrey;
+	padding-left:0px;
+}
+
+article.orders table tr td.accept, article.orders table tr td.decline, article.orders table tr td.complete, article.orders table tr td.details {
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+}
+
+article.orders table tr td.accept:hover, article.orders table tr td.decline:hover, article.orders table tr td.details:hover {
+	opacity: .8;
+}
+
+article.orders table tr td.accept {
+	background-color: #fff;
+	color:black;
+	border: 1px solid #16A085;
+}
+article.orders table tr td.accept:hover {
+	background-color: #16A085;
+	color: #fff;
+}
+
+article.orders table tr td.decline {
+	border: 1px solid crimson;
+	background-color: #fff;
+	color: black;
+}
+article.orders table tr td.decline:hover {
+	background-color: crimson;
+}
+
+
