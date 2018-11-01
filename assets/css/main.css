@@ -225,7 +225,16 @@ article.login span {
 	margin: 40px 0 30px 0;
 }
 
-article.login form {
+article.login form span.pop-up p {
+	color: 	#0080ff;
+	display: flex;
+	align-items: center;
+	border: 1px hidden;
+	background-color: lightgrey;
+	border-radius: 10px;
+	text-align: center;
+	width: auto;
+	padding: 5px 0 5px 50px;
 }
 
 article.login form input {
@@ -460,11 +469,6 @@ article.new-attendant form button.create, article.create-product form button {
 	width: 80px;
 }
 
-
-article.create-product form textarea {
-	height: 120px;
-	padding-top: 10px;
-}
 
 article.create-product form label {
 	border: 2px dashed steelblue;

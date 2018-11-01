@@ -86,26 +86,6 @@ article {
 	padding: 20px 0 0 50px
 }
 
-article.food-itms-cont {
-	align-content: flex-start;
-	display: flex;
-	flex-flow: row wrap;
-}
-
-article.food-itms-cont h1,  article.food-itms-cont h2 {
-	font-size: 1.7rem;
-	width: 100%
-}
-
-article.food-itms-cont button.add-food {
-	background-color: steelblue;
-	border-radius: 2px;
-	color: #fff;
-	cursor: pointer;
-	height: 40px;
-	margin: 0 0 40px 5px; 
-	width: 60px;
-}
 
 article.orders h1 {
 	font-size: 1.7rem;
