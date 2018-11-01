@@ -4,8 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>admin home</title>
-	<link rel="stylesheet" type="text/css" href="../assets/css/admin.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/fontello.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/admin.css">
 </head>
 <body>
 	<aside>
@@ -13,18 +14,21 @@
 		<a href="adm-index.html"><span class="fa fa-clipboard-list"></span>Home-adm</a>
 		<a href="adm-Products.html"><span class="fa fa-clipboard-list"></span> Products</a>
 		<a href="sales.html"><span class="fa fa-clipboard-list"></span> All Sales</a>
-		<a href="attendant.html"><span class="fa fa-user"></span> Create user</a>
 	</aside>
-	<article class="create-product login">
-		<h2>Create new product</h2>
+	<article class="login">
+		<span><b><u>Login admin</u></b></span>
+		<form id="usrlogin">
 		<span id="msg"></span>
-		<form id="newproduct">
-			<input type="text" id="product" name="product-name" placeholder="Enter product name">
-			<input type="text" id="price" name="product-price" placeholder="Enter product price">
-			<input type="number" id="quantity" name="product-qty" min="1" placeholder="Enter quantity">
-			<button type="submit" class="create">Create</button>
+			<input type="text" id="username" name="username" placeholder="Username">
+			<input type="password" id="password" name="password" placeholder="Password">
+			<button type="submit">Login</button>
 		</form>
 	</article>
-	<script src="../assets/js/createproduct.js"></script>
+	<script src="../assets/js/login.js"></script>
 </body>
 </html>
+
+
+
+
+
