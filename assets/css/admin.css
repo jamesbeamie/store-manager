@@ -96,7 +96,8 @@ article.orders table {
 	border-spacing: 3px 5px;
 	font-size: 1.5rem;
 	text-align: center;
-	width: 870px;
+	width: 750px;
+	margin: auto;
 }
 
 article.orders table tr th {
@@ -104,11 +105,11 @@ article.orders table tr th {
 	color: black;
 }
 
-article.orders table tr th:first-child {
-	background-color: #fff;
-}
-
 article.orders table tr td {
+	background: lightgrey;
+	padding: 0;
+}
+article.order table tr td {
 	background: lightgrey;
 	padding: 0;
 }

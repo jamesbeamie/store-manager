@@ -17,8 +17,7 @@ function allproduct(){
 			'<td>'+product.product_name+'</td>'+
 			'<td>'+product.price+'</td>'+
 			'<td>'+product.quantity+'</td>'+
-			'<td id="'+product.product_id+'" onclick="viewproduct(this.id)" class="accept">View</td>'+
-			'<td id="'+product.product_id+'" onclick="delet(this.id)" class="decline">delete</td></tr>';
+			'<td id="'+product.product_id+'" onclick="viewproduct(this.id)" class="accept">View</td></tr>';
 		})
 	})
 };
@@ -39,10 +38,7 @@ function viewproduct(product_id){
 			catlog.innerHTML = '<tr><td>'+product.product_id+'</td>'+
 			'<td>'+product.product_name+'</td>'+
 			'<td>'+product.price+'</td>'+
-			'<td>'+product.quantity+'</td></tr>'		//let response = `<p>${res.message}</p>`;
-		
-		//tagger.innerHTML = response;
-		//setTimeout(function (){ location.replace('/ui/admin/adm-Products.html')},1000)
+			'<td>'+product.quantity+'</td></tr>'		
 		})
 }
 

@@ -254,6 +254,11 @@ article.login form button {
 	height: 35px;
 	width: 70px;
 }
+article.login button {
+	background-color: lightgrey;
+	padding: 4px;
+	border-radius: 3px;
+}
 
 article.sale-records {
 	justify-content: center;
