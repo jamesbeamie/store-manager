@@ -5,7 +5,7 @@
 - Running locally, Clone the repository and open the index page in your browser.
 - Navigate through the application using the links in the navbar.
 ## Prerequisites
-- To launch the application locally, in stall a text editor.
+- To launch the application locally, install a text editor.
 - Download and install sublime text3 for mac and windows.
 - View the cloaned code in the editor and open in browser.
 ## Hosting
