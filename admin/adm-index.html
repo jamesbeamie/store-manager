@@ -15,7 +15,18 @@
 		<a href="adm-products.html"><span class="fa fa-clipboard-list"></span> Products</a>
 		<a href="sales.html"><span class="fa fa-clipboard-list"></span> All Sales</a>
 	</aside>
-	<article class="login">
+	<article class="new-attendant login">
+		<h2>Create new store attendant</h2>
+		<form id="regadmin">
+		<span class="pop-up" id="mesg"></span>
+			<input type="text" id="username" name="username" placeholder="Enter username">
+			<input type="text" id="password" name="password" placeholder="Enter password">
+			<input type="pasword" id="confirmpass" name="confirmpass" placeholder="Confirm password">
+			<input type="text" id="address" name="address" placeholder="Enter address(residence)">
+			<input type="text" id="role" name="role" placeholder="Enter role">
+			<button type="submit" class="create">Create</button>
+		</form>
+
 		<span><b><u>Login admin</u></b></span>
 		<form id="usrlogin">
 		<span class="pop-up" id="msg"></span>
@@ -25,6 +36,7 @@
 		</form>
 	</article>
 	<script src="../assets/js/login.js"></script>
+	<script src="../assets/js/regadm.js"></script>
 </body>
 </html>
 
