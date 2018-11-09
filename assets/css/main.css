@@ -259,6 +259,23 @@ article.login button {
 	padding: 4px;
 	border-radius: 3px;
 }
+article button.logout{
+	color: steelblue;
+	margin: 5px;
+	padding: 4px;
+	border-radius: 3px;
+	outline: none;
+
+}
+article button.logout:hover{
+	color: white;
+	background-color: grey;
+	margin: 5px;
+	padding: 4px;
+	border-radius: 3px;
+	outline: none;
+
+}
 
 article.sale-records {
 	justify-content: center;
