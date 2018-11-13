@@ -36,12 +36,12 @@ function delet(product_id){
 		let response = `<p>${res.message}</p>`;
 		let tagger = document.getElementById("msg");
 		tagger.innerHTML = response;
-		setTimeout(function (){ location.replace('/ui/admin/adm-Products.html')},1000)
+		setTimeout(function (){ location.replace('https://jamesbeamie.github.io/store-manager/admin/adm-Products.html')},1000)
 		})
 }
 function edit(product_id){
 	localStorage.setItem("identity",product_id)
-	location.replace('/ui/admin/edit.html')
+	location.replace('https://jamesbeamie.github.io/store-manager/admin/edit.html')
 }
 admproducts()
 
