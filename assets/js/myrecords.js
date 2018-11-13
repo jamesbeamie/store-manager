@@ -8,9 +8,8 @@ function getuser(){
 	})
 	.then((res) => res.json())
 	.then(function (res) {
-		let id = res.Users[1]['username'];
-		console.log(id);
-		viewrecord(id);
+		let name = res.Users[1]['username'];
+		viewrecord(name);
 		
 	})
 };
@@ -24,13 +23,15 @@ function viewrecord(attendant){
 	})
 	.then((res) => res.json())
 	.then(function (res) {
-		let sale = res.Record[0];
+		let sales = res.Record;
+		console.log(sales)
 		let reg = document.getElementById("mysales");
+		sales.forEach(sale =>{
 			reg.innerHTML += '<tr><td>'+sale.sales_id+'</td>'+
 			'<td>'+sale.attendant+'</td>'+
 			'<td>'+sale.price+'</td>'+
 			'<td>'+sale.product_name+'</td>'+
-			'<td>'+sale.quantity+'</td></tr>'		
+			'<td>'+sale.quantity+'</td></tr>'})		
 		})
 }
 getuser()
