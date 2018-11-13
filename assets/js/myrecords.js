@@ -8,7 +8,8 @@ function getuser(){
 	})
 	.then((res) => res.json())
 	.then(function (res) {
-		let name = res.Users[1]['username'];
+		let name = res.Users['username'];
+		console.log(name)
 		viewrecord(name);
 		
 	})

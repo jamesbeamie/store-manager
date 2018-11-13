@@ -39,8 +39,9 @@ function delet(product_id){
 		setTimeout(function (){ location.replace('/ui/admin/adm-Products.html')},1000)
 		})
 }
-
-
-
+function edit(product_id){
+	localStorage.setItem("identity",product_id)
+	location.replace('/ui/admin/edit.html')
+}
 admproducts()
 

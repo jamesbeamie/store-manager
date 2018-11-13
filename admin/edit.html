@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>admin | create product</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/admin.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+</head>
+<body>
+	<aside>
+		<a href="../index.html"><h1 class="logo">Jay Store</h1></a>
+		<a href="adm-index.html"><span class="fa fa-clipboard-list"></span>Home-adm</a>
+		<a href="adm-products.html"><span class="fa fa-clipboard-list"></span> Products</a>
+		<a href="sales.html"><span class="fa fa-clipboard-list"></span> All Sales</a>
+		<a href="attendant.html"><span class="fa fa-user"></span> Create user</a>
+	</aside>
+	<article class="create-product login">
+		<h2>Edit product</h2>
+		<span id="msg"></span>
+		<form id="editproduct">
+			<input type="text" id="product" name="product-name" placeholder="Enter product name">
+			<input type="text" id="price" name="product-price" placeholder="Enter product price">
+			<input type="text" id="quantity" name="product-qty" min="1" placeholder="Enter quantity">
+			<button type="button" onclick="editproduct()" class="create">Edit</button>
+		</form>
+	</article>
+	<script src="../assets/js/edit.js"></script>
+</body>
+</html>
