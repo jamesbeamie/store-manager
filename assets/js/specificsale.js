@@ -10,7 +10,6 @@ function allusers(){
 	.then((res) => res.json())
 	.then(function (res) {
 		let reg = document.getElementById("register");
-		console.log(res);
 		let users = res.Users;
 		users.forEach(user => {
 			reg.innerHTML += '<tr><td>'+user.user_id+'</td>'+
@@ -31,14 +30,17 @@ function viewsales(attendant){
 	})
 	.then((res) => res.json())
 	.then(function (res) {
-		let sale = res.Record[0];
-		console.log(sale)
+		let sales = res.Record;
+		console.log(sales)
 		let reg = document.getElementById("filter");
+		sales.forEach(sale =>{
 			reg.innerHTML += '<tr><td>'+sale.sales_id+'</td>'+
 			'<td>'+sale.attendant+'</td>'+
 			'<td>'+sale.price+'</td>'+
 			'<td>'+sale.product_name+'</td>'+
-			'<td>'+sale.quantity+'</td></tr>'		
+			'<td>'+sale.quantity+'</td></tr>'
+		})
+					
 		})
 }
 

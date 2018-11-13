@@ -30,7 +30,8 @@ function delet(product_id){
 		headers: { "Content-Type":"application/json",
 			       "Authorization": "Bearer "+userTok
 			   }
-	}).then((res) => res.json())
+	})
+	.then((res) => res.json())
 	.then(function (res) {
 		let response = `<p>${res.message}</p>`;
 		let tagger = document.getElementById("msg");
@@ -38,6 +39,7 @@ function delet(product_id){
 		setTimeout(function (){ location.replace('/ui/admin/adm-Products.html')},1000)
 		})
 }
+
 
 
 admproducts()
