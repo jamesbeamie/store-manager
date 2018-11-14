@@ -8,9 +8,9 @@ function getuser(){
 	})
 	.then((res) => res.json())
 	.then(function (res) {
-		let name = res.Users['username'];
-		console.log(name)
-		viewrecord(name);
+		let jina = localStorage.getItem("uname");
+		console.log(jina)
+		viewrecord(jina);
 		
 	})
 };

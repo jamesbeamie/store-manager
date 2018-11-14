@@ -14,6 +14,7 @@ function usrlogin(e){
 	})
 	.then((res) => res.json())
 	.then(function (res) {
+		localStorage.setItem("uname",res.identity);
 		localStorage.setItem("token",res.Usertoken);
 		let response = `<p>${res.message}</p>`;
 		let tagger = document.getElementById("msg");
