@@ -1,4 +1,4 @@
-function allsales(){
+function allSales(){
 	let userTok = localStorage.getItem("token")
 	fetch('https://jayme-store.herokuapp.com/api/v2/sales', {
 		method: "GET",
@@ -20,4 +20,4 @@ function allsales(){
 		})
 	})
 };
-allsales()
+allSales()

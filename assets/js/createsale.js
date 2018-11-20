@@ -1,5 +1,5 @@
-document.getElementById("newsale").addEventListener("submit",newsale);
-function newsale(e){
+document.getElementById("newsale").addEventListener("submit",newSale);
+function newSale(e){
 	e.preventDefault();
 	let product = document.getElementById("product").value;
 	let price = document.getElementById("price").value;

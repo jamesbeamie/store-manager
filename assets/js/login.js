@@ -1,5 +1,5 @@
-document.getElementById("usrlogin").addEventListener("submit",usrlogin);
-function usrlogin(e){
+document.getElementById("usrlogin").addEventListener("submit",usrLogin);
+function usrLogin(e){
 	e.preventDefault();
 	let username = document.getElementById("username").value;
 	let password = document.getElementById("password").value;
@@ -14,10 +14,12 @@ function usrlogin(e){
 	})
 	.then((res) => res.json())
 	.then(function (res) {
+		localStorage.setItem("uname",res.identity);
 		localStorage.setItem("token",res.Usertoken);
 		let response = `<p>${res.message}</p>`;
 		let tagger = document.getElementById("msg");
 		tagger.innerHTML = response;
+		location.replace('https://jamesbeamie.github.io/store-manager/template/admin/products.html'),1000;
 	})
 }
 

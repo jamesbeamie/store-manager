@@ -1,5 +1,5 @@
-document.getElementById("newproduct").addEventListener("submit",newproduct);
-function newproduct(e){
+document.getElementById("newproduct").addEventListener("submit",newProduct);
+function newProduct(e){
 	e.preventDefault();
 	let product = document.getElementById("product").value;
 	let price = document.getElementById("price").value;

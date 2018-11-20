@@ -1,5 +1,5 @@
 
-function allproducts(){
+function allProducts(){
 	let userTok = localStorage.getItem("token")
 	fetch('https://jayme-store.herokuapp.com/api/v2/products', {
 		method: "GET",
@@ -9,9 +9,7 @@ function allproducts(){
 	})
 	.then((res) => res.json())
 	.then(function (res) {
-		//let response = `<p>${res.message}</p>`;
 		let catlog = document.getElementById("catalog");
-		//catlog.innerHTML;
 		console.log(res);
 		let products = res.Products;
 		products.forEach(product => {
@@ -21,5 +19,5 @@ function allproducts(){
 		})
 	})
 }
-allproducts()
+allProducts()
 
