@@ -1,5 +1,5 @@
 let idee = localStorage.getItem('identity');
-function allproduct(idee){
+function allProduct(idee){
 	let userTok = localStorage.getItem('token')
 	fetch('https://jayme-store.herokuapp.com/api/v2/products/'+idee, {
 		method: "GET",
@@ -16,7 +16,7 @@ function allproduct(idee){
 		document.getElementById('quantity').value = products[0]['quantity']; 
 	})
 };
-function editproduct(idee){
+function editProduct(idee){
 	let product = document.getElementById("product").value;
 	let price = document.getElementById("price").value;
 	let quantity = document.getElementById("quantity").value;
@@ -43,4 +43,4 @@ function editproduct(idee){
 		tagger.innerHTML = response;
 	})
 }
-allproduct(idee)
+allProduct(idee)

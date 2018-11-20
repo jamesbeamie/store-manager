@@ -1,5 +1,5 @@
-document.getElementById("regadmin").addEventListener("submit",regadmin);
-function regadmin(e){
+document.getElementById("regadmin").addEventListener("submit",regAdmin);
+function regAdmin(e){
 	e.preventDefault();
 	let username = document.getElementById("username").value;
 	let password = document.getElementById("password").value;
@@ -25,7 +25,9 @@ function regadmin(e){
 		let response = `<p>${res.message}</p>`;
 		let tagger = document.getElementById("mesg");
 		tagger.innerHTML = response;
+	setTimeout(function (){ location.replace('https://jamesbeamie.github.io/store-manager/template/admin/admin/admindex.html')},1000)
 	})
 }
+
 
 

@@ -1,5 +1,5 @@
-document.getElementById("regattendant").addEventListener("submit",regattendant);
-function regattendant(e){
+document.getElementById("regattendant").addEventListener("submit",regAttendant);
+function regAttendant(e){
 	e.preventDefault();
 	let username = document.getElementById("username").value;
 	let password = document.getElementById("password").value;

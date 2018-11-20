@@ -1,4 +1,4 @@
-function getuser(){
+function getUser(){
 	let userTok = localStorage.getItem("token")
 	fetch('https://jayme-store.herokuapp.com/api/v2/users', {
 		method: "GET",
@@ -8,13 +8,13 @@ function getuser(){
 	})
 	.then((res) => res.json())
 	.then(function (res) {
-		let name = res.Users['username'];
-		console.log(name)
-		viewrecord(name);
+		let jina = localStorage.getItem("uname");
+		console.log(jina)
+		viewRecord(jina);
 		
 	})
 };
-function viewrecord(attendant){
+function viewRecord(attendant){
 	let token = localStorage.getItem("token")
 	fetch('https://jayme-store.herokuapp.com/api/v2/sales/'+attendant,{
 		method:"GET",
@@ -35,4 +35,4 @@ function viewrecord(attendant){
 			'<td>'+sale.quantity+'</td></tr>'})		
 		})
 }
-getuser()
+getUser()

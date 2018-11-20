@@ -1,5 +1,4 @@
-
-function admproducts(){
+function admProducts(){
 	let userTok = localStorage.getItem("token")
 	fetch('https://jayme-store.herokuapp.com/api/v2/products', {
 		method: "GET",
@@ -36,12 +35,11 @@ function delet(product_id){
 		let response = `<p>${res.message}</p>`;
 		let tagger = document.getElementById("msg");
 		tagger.innerHTML = response;
-		setTimeout(function (){ location.replace('/ui/admin/adm-Products.html')},1000)
+		setTimeout(function (){ location.replace('https://jamesbeamie.github.io/store-manager/template/admin/admiproducts.html')},1000)
 		})
 }
 function edit(product_id){
 	localStorage.setItem("identity",product_id)
-	location.replace('/ui/admin/edit.html')
+	location.replace('https://jamesbeamie.github.io/store-manager/template/admin/edit.html')
 }
-admproducts()
-
+admProducts()

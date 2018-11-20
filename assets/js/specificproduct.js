@@ -1,5 +1,5 @@
 
-function allproduct(){
+function allProducts(){
 	let userTok = localStorage.getItem("token")
 	fetch('https://jayme-store.herokuapp.com/api/v2/products', {
 		method: "GET",
@@ -17,12 +17,12 @@ function allproduct(){
 			'<td>'+product.product_name+'</td>'+
 			'<td>'+product.price+'</td>'+
 			'<td>'+product.quantity+'</td>'+
-			'<td id="'+product.product_id+'" onclick="viewproduct(this.id)" class="accept">View</td></tr>';
+			'<td id="'+product.product_id+'" onclick="viewProduct(this.id)" class="accept">View</td></tr>';
 		})
 	})
 };
 
-function viewproduct(product_id){
+function viewProduct(product_id){
 	let token = localStorage.getItem("token")
 	fetch('https://jayme-store.herokuapp.com/api/v2/products/'+product_id,{
 		method:"GET",
@@ -42,5 +42,5 @@ function viewproduct(product_id){
 		})
 }
 
-allproduct()
+allProduct()
 
