@@ -35,11 +35,19 @@ function delet(product_id){
 		let response = `<p>${res.message}</p>`;
 		let tagger = document.getElementById("msg");
 		tagger.innerHTML = response;
+<<<<<<< HEAD:assets/js/admiProducts.js
 		setTimeout(function (){ location.replace('https://jamesbeamie.github.io/store-manager/template/admin/admiproducts.html')},1000)
+=======
+		setTimeout(function (){ location.replace('https://jamesbeamie.github.io/store-manager/admin/adm-Products.html')},1000)
+>>>>>>> c8792cd7a1f1995bd480e070648ed7ad8f643ca1:assets/js/ad-products.js
 		})
 }
 function edit(product_id){
 	localStorage.setItem("identity",product_id)
+<<<<<<< HEAD:assets/js/admiProducts.js
 	location.replace('https://jamesbeamie.github.io/store-manager/template/admin/edit.html')
+=======
+	location.replace('https://jamesbeamie.github.io/store-manager/admin/edit.html')
+>>>>>>> c8792cd7a1f1995bd480e070648ed7ad8f643ca1:assets/js/ad-products.js
 }
 admProducts()

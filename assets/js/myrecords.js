@@ -10,7 +10,11 @@ function getUser(){
 	.then(function (res) {
 		let jina = localStorage.getItem("uname");
 		console.log(jina)
+<<<<<<< HEAD
 		viewRecord(jina);
+=======
+		viewrecord(jina);
+>>>>>>> c8792cd7a1f1995bd480e070648ed7ad8f643ca1
 		
 	})
 };

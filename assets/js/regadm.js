@@ -25,7 +25,11 @@ function regAdmin(e){
 		let response = `<p>${res.message}</p>`;
 		let tagger = document.getElementById("mesg");
 		tagger.innerHTML = response;
+<<<<<<< HEAD
 	setTimeout(function (){ location.replace('https://jamesbeamie.github.io/store-manager/template/admin/admin/admindex.html')},1000)
+=======
+	setTimeout(function (){ location.replace('https://jamesbeamie.github.io/store-manager/admin/adm-index.html')},1000)
+>>>>>>> c8792cd7a1f1995bd480e070648ed7ad8f643ca1
 	})
 }
 
