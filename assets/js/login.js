@@ -19,7 +19,6 @@ function usrLogin(e){
 		let response = `<p>${res.message}</p>`;
 		let tagger = document.getElementById("msg");
 		tagger.innerHTML = response;
-		location.replace('https://jamesbeamie.github.io/store-manager/template/admin/products.html'),1000;
 	})
 }
 
