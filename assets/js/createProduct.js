@@ -1,5 +1,6 @@
 document.getElementById("newproduct").addEventListener("submit",newProduct);
 function newProduct(e){
+	//avoid default form behavior
 	e.preventDefault();
 	let product = document.getElementById("product").value;
 	let price = document.getElementById("price").value;
