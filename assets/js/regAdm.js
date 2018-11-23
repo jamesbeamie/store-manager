@@ -25,7 +25,6 @@ function regAdmin(e){
 		let response = `<p>${res.message}</p>`;
 		let tagger = document.getElementById("mesg");
 		tagger.innerHTML = response;
-<<<<<<< HEAD
 	setTimeout(function (){ location.replace('https://jamesbeamie.github.io/store-manager/template/admin/admin/admindex.html')},1000)
 	})
 }
