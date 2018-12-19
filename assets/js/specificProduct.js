@@ -10,7 +10,6 @@ function allProducts(){
 	.then((res) => res.json())
 	.then(function (res) {
 		let catlog = document.getElementById("catalog");
-		console.log(res);
 		let products = res.Products;
 		products.forEach(product => {
 			catlog.innerHTML += '<tr><td>'+product.product_id+'</td>'+

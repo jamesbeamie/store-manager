@@ -24,6 +24,7 @@ function newSale(e){
 		let response = `<p>${res.message}</p>`;
 		let tagger = document.getElementById("msg");
 		tagger.innerHTML = response;
+		setTimeout(function (){ location.replace('https://jamesbeamie.github.io/store-manager/template/createsale.html')},1000)
 	})
 }
 
