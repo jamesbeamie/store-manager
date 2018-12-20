@@ -41,5 +41,5 @@ function viewProduct(product_id){
 		})
 }
 
-allProduct()
+allProducts()
 
