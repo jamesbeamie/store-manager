@@ -1,4 +1,6 @@
+
 function admProducts(){
+	//get authentication token
 	let userTok = localStorage.getItem("token")
 	fetch('https://jayme-store.herokuapp.com/api/v2/products', {
 		method: "GET",
